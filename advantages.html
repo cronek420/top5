@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advantages | AutomationHub - High-ROI Implementation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .advantage-section {
+            padding: 120px 0;
+        }
+
+        .advantage-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 4rem;
+            align-items: center;
+            margin-bottom: 6rem;
+        }
+
+        .advantage-grid:nth-child(even) {
+            direction: rtl;
+        }
+
+        .advantage-grid:nth-child(even) .content {
+            direction: ltr;
+        }
+
+        .advantage-image {
+            border-radius: 24px;
+            border: 1px solid var(--border);
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .advantage-image img {
+            width: 100%;
+            display: block;
+            filter: brightness(0.8);
+            transition: 0.5s;
+        }
+
+        .advantage-image:hover img {
+            filter: brightness(1);
+            transform: scale(1.05);
+        }
+
+        .content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-white);
+        }
+
+        .content p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .check-list {
+            list-style: none;
+        }
+
+        .check-list li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--text-white);
+            margin-bottom: 12px;
+        }
+
+        .check-list li::before {
+            content: "✓";
+            color: var(--secondary);
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-glow">
+        <div class="glow-1"></div>
+        <div class="glow-2"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">AutomationHub</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Solutions</a></li>
+                <li><a href="advantages.html" style="color: var(--text-white)">Advantages</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero" style="padding: 151px 0 80px;">
+        <div class="container">
+            <div class="hero-badge">The AutomationHub Advantage</div>
+            <h1>Why Leaders Choose <br><span style="color: var(--primary)">Capital Efficiency</span></h1>
+            <p>We deploy high-leverage Revenue Assets engineered to slash overhead, accelerate pipeline, and buy back
+                your time—all within 24 hours.</p>
+        </div>
+    </header>
+
+    <section class="advantage-section">
+        <div class="container">
+            <!-- Advantage 1 -->
+            <div class="advantage-grid reveal-hidden">
+                <div class="content">
+                    <h2>Capital Efficiency</h2>
+                    <p>Automations are often intangible cloud-based systems. It’s difficult to clearly see their value.
+                        We follow a strict rule: every system must produce a tangible asset you can see and feel.</p>
+                    <ul class="check-list">
+                        <li>Real-time CRM entries & dashboards</li>
+                        <li>Automated PDF whitepapers & quotes</li>
+                        <li>Daily generated lead spreadsheets</li>
+                        <li>Slack/Discord notifications for every win</li>
+                    </ul>
+                </div>
+                <div class="advantage-image">
+                    <img src="mediastorage/v2_deep_personalization_1770509017219.png" alt="Tangible Results">
+                </div>
+            </div>
+
+            <!-- Advantage 2 -->
+            <div class="advantage-grid reveal-hidden">
+                <div class="content">
+                    <h2>Revenue Velocity</h2>
+                    <p>We don't solve minor inconveniences. We target "hot-button" problems that impact revenue, save
+                        significant capital, or free up founder time immediately.</p>
+                    <ul class="check-list">
+                        <li>Eliminating fulfillment bottlenecks</li>
+                        <li>Fixing broken outreach reply rates</li>
+                        <li>Reducing content agency overhead by 80%</li>
+                        <li>Automating the entire hiring lifecycle</li>
+                    </ul>
+                </div>
+                <div class="advantage-image">
+                    <img src="mediastorage/v2_lead_scraper_1770509031904.png" alt="Revenue Focused">
+                </div>
+            </div>
+
+            <!-- Advantage 3 -->
+            <div class="advantage-grid reveal-hidden">
+                <div class="content">
+                    <h2>Executive Leverage</h2>
+                    <p>The best automations are ones you can build quickly using proven blueprints. Pre-made systems are
+                        delivered within 24 hours. Custom builds are ready in 2-4 weeks, ensuring you see a return on
+                        investment almost immediately.</p>
+                    <ul class="check-list">
+                        <li>Blueprints for N8N, Make, and Zapier</li>
+                        <li>Import-ready Google Sheets & Notion CRM</li>
+                        <li>Battle-tested AI prompts that actually work</li>
+                        <li>Full lifetime implementation support</li>
+                    </ul>
+                </div>
+                <div class="advantage-image">
+                    <img src="mediastorage/v2_hiring_system_1770509071561.png" alt="Blueprint Speed">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 AutomationHub. Built on proven templates for high-ROI delivery.</p>
+            <p>
+                <a href="index.html">Home</a> |
+                <a href="advantages.html">Advantages</a> |
+                <a href="faq.html">FAQ</a> |
+                <a href="contact.html">Contact</a>
+            </p>
+            <p><a href="mailto:support@automationhub.com">support@automationhub.com</a> | <a
+                    href="tel:+1-555-123-4567">+1 (555) 123-4567</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
