@@ -1,0 +1,84 @@
+/* styles-patch.css
+   Small additive layer so you can keep your existing styles.css untouched.
+   Safe to tweak without hunting through index.html.
+*/
+
+:root {
+  /* Uses your existing CSS variables (e.g., --primary, --text-muted, --border). */
+}
+
+.skip-link{
+  position:absolute;
+  left:-9999px;
+  top:12px;
+  padding:10px 14px;
+  border-radius:10px;
+  background: rgba(15,23,42,0.92);
+  color: var(--text-white);
+  border: 1px solid var(--border);
+  z-index: 9999;
+}
+.skip-link:focus{ left:12px; }
+
+.accent{ color: var(--primary); }
+
+.section--padded{ padding: 100px 0; }
+.section--glass{ background: rgba(15, 23, 42, 0.3); }
+.section--border-top{ border-top: 1px solid var(--border); }
+
+.container--narrow{ max-width: 800px; }
+.text-center{ text-align: center; }
+.muted{ color: var(--text-muted); }
+.p-base{ font-size: 1rem; }
+.p-lg{ font-size: 1.2rem; }
+.leading-relaxed{ line-height: 1.8; }
+
+.mb-lg{ margin-bottom: 20px; }
+.mb-xl{ margin-bottom: 30px; }
+.mb-2xl{ margin-bottom: 2rem; }
+.mb-3xl{ margin-bottom: 3rem; }
+.mb-4xl{ margin-bottom: 4rem; }
+
+.mt-lg{ margin-top: 20px; }
+.w-full{ width: 100%; }
+
+.product-grid--3{ grid-template-columns: repeat(3, 1fr); }
+
+.quote-block{
+  border-left: 2px solid var(--primary);
+  padding-left: 2rem;
+  text-align: left;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.btn-row{
+  display:flex;
+  gap:10px;
+  align-items: stretch;
+}
+
+.btn-link{
+  padding: 12px 20px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Ensure close buttons look like your original 'x' spans */
+button.close{
+  background: transparent;
+  border: none;
+  color: inherit;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+/* Result badge normalization */
+.result--primary{
+  background: rgba(99, 102, 241, 0.1);
+  border-color: rgba(99, 102, 241, 0.2);
+  color: var(--primary);
+}
