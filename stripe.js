@@ -10,7 +10,7 @@
  */
 
 // Initialize Stripe (replace with your publishable key)
-const stripePublishableKey = 'pk_test_YOUR_PUBLISHABLE_KEY_HERE';
+const stripePublishableKey = pk_live_51RCVaCP36JQgLLd8SCHHtPzuSO2s6IuDXxxKLuJj9tpUQQLTiJfrtYosu9ih5M6KOI1D6VJ32Jw5p6G82bx00O2i00PI19OGmD;
 let stripe = null;
 
 // Initialize on page load
