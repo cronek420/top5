@@ -1,175 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | AutomationHub - Get Your Quote</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        .contact-section {
-            padding: 120px 0;
-        }
-
-        .contact-container {
-            max-width: 900px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1.5fr;
-            gap: 4rem;
-        }
-
-        .contact-info h2 {
-            font-size: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .contact-info p {
-            color: var(--text-muted);
-            margin-bottom: 2rem;
-        }
-
-        .info-card {
-            background: var(--bg-slate);
-            padding: 1.5rem;
-            border-radius: 16px;
-            border: 1px solid var(--border);
-            margin-bottom: 1.5rem;
-        }
-
-        .info-card h4 {
-            color: var(--primary);
-            margin-bottom: 0.5rem;
-        }
-
-        .contact-form-container {
-            background: var(--bg-slate);
-            padding: 3rem;
-            border-radius: 24px;
-            border: 1px solid var(--border);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | 9Design Agents</title>
+  <meta name="description" content="Contact and project status for 9Design Agents.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles-patch.css">
+  <style>
+    .contact-section{padding:120px 0}.status-wrap{max-width:900px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem}.info-card{background:var(--bg-slate);padding:2rem;border-radius:20px;border:1px solid var(--border)}.info-card h3{margin-bottom:1rem;color:var(--primary)}.info-card p{color:var(--text-muted)}
+  </style>
 </head>
-
 <body>
-    <div class="bg-glow">
-        <div class="glow-1"></div>
-        <div class="glow-2"></div>
-    </div>
+  <div class="bg-glow"><div class="glow-1"></div><div class="glow-2"></div></div>
+  <nav class="navbar"><div class="container"><a class="logo" href="index.html">9Design Agents</a><ul class="nav-links"><li><a href="index.html#products">Systems</a></li><li><a href="advantages.html">Why 9Design</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html" style="color:var(--text-white)">Contact</a></li></ul></div></nav>
 
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">AutomationHub</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Solutions</a></li>
-                <li><a href="advantages.html">Advantages</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="contact.html" style="color: var(--text-white)">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+  <header class="hero" style="padding:151px 0 80px"><div class="container"><div class="hero-badge">CONTACT SETUP IN PROGRESS</div><h1>We removed the fake contact details.</h1><p>The old site displayed placeholder email and phone information. 9Design is being connected to a real business contact channel now, so this page will not pretend a message was submitted when it was not.</p></div></header>
 
-    <header class="hero" style="padding: 151px 0 80px;">
-        <div class="container">
-            <div class="hero-badge">Acquire High-Leverage Assets</div>
-            <h1>Initialize Your <br><span style="color: var(--primary)">ROI Strategy Session</span></h1>
-            <p>Identify your $1,000/day bottlenecks and deploy a battle-tested Revenue Asset in 24 hours.</p>
-        </div>
-    </header>
+  <section class="contact-section"><div class="container"><div class="status-wrap">
+    <div class="info-card"><h3>Buying a listed system</h3><p>Use the Stripe purchase button on the system page. Stripe handles the payment flow independently of this contact page.</p><p style="margin-top:1.5rem"><a href="index.html#products" class="cta-btn-secondary btn-link">View systems</a></p></div>
+    <div class="info-card"><h3>Custom project</h3><p>The project-intake form is temporarily disabled until it is connected to a real inbox or CRM. This prevents inquiries from disappearing into a browser-only form.</p></div>
+    <div class="info-card"><h3>What gets connected next</h3><p>A 9Design business email plus a working intake route that sends every inquiry somewhere you can actually see and respond to it.</p></div>
+  </div></div></section>
 
-    <section class="contact-section">
-        <div class="container">
-            <div class="contact-container">
-                <div class="contact-info reveal-hidden">
-                    <h2>Immediate Impact</h2>
-                    <p>We focus on high-leverage systems that recover your investment in weeks. Every lead session
-                        starts with identifying your tangible deliverable.</p>
-
-                    <div class="info-card">
-                        <h4>Direct Inquiry</h4>
-                        <p>support@automationhub.com</p>
-                    </div>
-                    <div class="info-card">
-                        <h4>Urgent Support</h4>
-                        <p>+1 (555) 123-4567</p>
-                    </div>
-                    <div class="info-card">
-                        <h4>Global Ops</h4>
-                        <p>Aka "Lexicon Solutions" Core</p>
-                    </div>
-                </div>
-
-                <div class="contact-form-container reveal-hidden">
-                    <form id="questionnaireForm" onsubmit="submitQuestionnaire(event)">
-                        <div class="form-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-                            <div class="form-group">
-                                <label>Full Name</label>
-                                <input type="text" name="fullName" required placeholder="John Doe">
-                            </div>
-                            <div class="form-group">
-                                <label>Work Email</label>
-                                <input type="email" name="email" required placeholder="john@company.com">
-                            </div>
-                            <div class="form-group">
-                                <label>Company Name</label>
-                                <input type="text" name="companyName" required placeholder="Acme Corp">
-                            </div>
-                            <div class="form-group">
-                                <label>Company Website</label>
-                                <input type="url" name="website" placeholder="https://">
-                            </div>
-                        </div>
-                        <div class="form-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-                            <div class="form-group">
-                                <label>Company Size</label>
-                                <select name="companySize" required>
-                                    <option value="solo">Solo / Freelancer</option>
-                                    <option value="2-10">2-10 employees</option>
-                                    <option value="11-50">11-50 employees</option>
-                                    <option value="50+">50+ employees</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label>Industry</label>
-                                <select name="industry" required>
-                                    <option value="SaaS">SaaS</option>
-                                    <option value="E-commerce">E-commerce</option>
-                                    <option value="Agency">Agency</option>
-                                    <option value="Other">Other</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label>Primary Challenge</label>
-                            <textarea name="challenge" rows="3"
-                                placeholder="What is your biggest revenue bottleneck?"></textarea>
-                        </div>
-                        <button type="submit" class="cta-btn" style="width: 100%;">Initiate Strategy Session</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 AutomationHub. Built on proven templates for high-ROI delivery.</p>
-            <p>
-                <a href="index.html">Home</a> |
-                <a href="advantages.html">Advantages</a> |
-                <a href="faq.html">FAQ</a> |
-                <a href="contact.html">Contact</a>
-            </p>
-            <p><a href="mailto:support@automationhub.com">support@automationhub.com</a> | <a
-                    href="tel:+1-555-123-4567">+1 (555) 123-4567</a></p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+  <footer class="footer"><div class="container"><p>&copy; 2026 9Design Agents.</p><p><a href="index.html">Home</a> | <a href="advantages.html">Why 9Design</a> | <a href="faq.html">FAQ</a></p></div></footer>
+  <script src="script.js" defer></script>
 </body>
-
 </html>
