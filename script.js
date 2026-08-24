@@ -66,6 +66,20 @@ function applyBrandCompatibility() {
   document.querySelectorAll('a[href^="mailto:support@automationhub.com"], a[href^="tel:+1-555-123-4567"]').forEach(el => {
     el.closest('p')?.remove();
   });
+
+  // Route the verified Universal products to their dedicated pages.
+  document.querySelectorAll('#universal .product-card').forEach(card => {
+    const title = card.querySelector('h3')?.textContent?.trim() || '';
+    const link = card.querySelector('a.cta-btn-secondary');
+    if (!link) return;
+    if (title.includes('Universal Agentic Workforce')) {
+      link.href = 'universal-workforce.html';
+      link.textContent = 'See how it works';
+    } else if (title.includes('Universal Resume')) {
+      link.href = 'universal-resume.html';
+      link.textContent = 'See how it works';
+    }
+  });
 }
 
 document.addEventListener('DOMContentLoaded', loadConfig);
@@ -97,7 +111,7 @@ function closeCheckout() {
 
 function submitQuestionnaire(event) {
   event.preventDefault();
-  alert('This inquiry form is not connected yet, so nothing was submitted. We are connecting the 9Design contact channel next.');
+  window.location.href = 'contact.html';
 }
 
 window.onclick = function (event) {
