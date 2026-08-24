@@ -1,37 +1,19 @@
 {
   "BUSINESS_CONFIG": {
-    "COMPANY_NAME": "AutomationHub",
+    "COMPANY_NAME": "9Design Agents",
     "FOUNDER_NAME": "Thomas Gronek",
-    "FOUNDER_TITLE": "Founder & CEO",
-    "CONTACT_EMAIL": "support@lexiconsolutions.com",
-    "CONTACT_PHONE": "1-707-362-9909",
+    "FOUNDER_TITLE": "Founder",
+    "CONTACT_EMAIL": "",
+    "CONTACT_PHONE": "",
     "BUSINESS_ADDRESS": "Asheville, NC",
-    "STRATEGY_SESSION_URL": "https://calendly.com/your-link",
-    "SUPPORT_HOURS": "9 AM - 5 PM EST"
+    "SITE_URL": "https://agent.9design.online",
+    "STRATEGY_SESSION_URL": ""
   },
   "STRIPE_CONFIG": {
-    "STRIPE_PUBLISHABLE_KEY": "pk_test_xxxxxxxxxxxx",
     "CURRENCY": "USD",
-    "SUCCESS_URL": "https://yourdomain.com/success.html",
-    "CANCEL_URL": "https://yourdomain.com/index.html#products"
+    "SUCCESS_URL": "https://agent.9design.online/",
+    "CANCEL_URL": "https://agent.9design.online/#products"
   },
-  "API_INTEGRATIONS": {
-    "LOOM_DEMO_URL": "https://www.loom.com/share/xxxx",
-    "HUBSPOT_PORTAL_ID": "xxxx",
-    "N8N_WEBHOOK_HIRING": "https://n8n.yourserver.com/webhook/xxxx",
-    "N8N_WEBHOOK_LEADS": "https://n8n.yourserver.com/webhook/xxxx",
-    "N8N_WEBHOOK_NEWSLETTER": "https://n8n.yourserver.com/webhook/xxxx"
-  },
-  "PRODUCT_BUY_LINKS": {
-    "DEEP_PERSONALIZATION": "https://buy.stripe.com/xxxx1",
-    "LEAD_SCRAPER": "https://buy.stripe.com/xxxx2",
-    "CONTENT_PARASITE": "https://buy.stripe.com/xxxx3",
-    "NEWSLETTER_FACTORY": "https://buy.stripe.com/xxxx4",
-    "HIRING_AUTOPILOT": "https://buy.stripe.com/xxxx5"
-  },
-  "SOCIAL_PROOF": {
-    "TRUSTPILOT_URL": "https://trustpilot.com/review/you",
-    "TWITTER_HANDLE": "@LexiconAI",
-    "LINKEDIN_URL": "https://linkedin.com/company/you"
-  }
+  "API_INTEGRATIONS": {},
+  "SOCIAL_PROOF": {}
 }
