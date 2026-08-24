@@ -11,129 +11,133 @@
 - `universal-*` = sellable/onboarding-ready versions for customers
 - `archive-*` = legacy copies kept only for history after verification
 
-Do not delete or archive a repository until its code, deployment, secrets history, and unique files have been compared with the selected canonical repository.
-
 ## Canonical product map
 
-| 9Design product | Target subdomain | Current canonical repo | Recommended future repo name | Status |
+| 9Design product | Target subdomain | Canonical repo | Future repo name | Status |
 |---|---|---|---|---|
-| 9Design Agents / automation storefront | `agent.9design.online` | `cronek420/top5` | `9design-agents` | KEEP / REBRAND |
-| Dream / dream journal | `dream.9design.online` | `cronek420/DreamWeaver` | `9design-dream` | KEEP / CONSOLIDATE |
-| Shirts / mural apparel | `shirts.9design.online` | `cronek420/fractal-odyssey` (web experience candidate) | `9design-shirts` | KEEP / VERIFY STORE SOURCE |
+| Agents / automation storefront | `agent.9design.online` | `cronek420/top5` | `9design-agents` | ACTIVE |
+| Dream / dream journal | `dream.9design.online` | `cronek420/DreamWeaver` | `9design-dream` | ACTIVE / CONSOLIDATION TARGET |
+| Shirts / mural apparel | `shirts.9design.online` | `cronek420/fractal-odyssey` | `9design-shirts` | KEEP / VERIFY STORE SOURCE |
 | Hike / Trail Mate | `hike.9design.online` | `cronek420/Trail--Mate` | `9design-hike` | KEEP |
-| Photo / selfie scoring | `photo.9design.online` | `cronek420/Photo-Score` | `9design-photo` | KEEP / VERIFY AGAINST SELFIE REPOS |
-| Rough Draft Builders Club | `build.9design.online` (optional) | `cronek420/Rough-Draft-Builders-Club` | `9design-builders-club` | KEEP |
+| Photo / selfie scoring | `photo.9design.online` | `cronek420/Photo-Score` | `9design-photo` | KEEP / CONSOLIDATION TARGET |
+| Rough Draft Builders Club | `build.9design.online` | `cronek420/Rough-Draft-Builders-Club` | `9design-builders-club` | KEEP |
 | Asheville Vibe | `vibe.9design.online` | `cronek420/AVG_APP` | `9design-asheville-vibe` | KEEP / VERIFY WEB+MOBILE SPLIT |
 | Experiments | `lab.9design.online` | none selected | `9design-lab` | FUTURE |
 
-## Internal Atlas systems — keep separate from customer-facing 9Design product repos
+## Internal Atlas systems — protected
 
-| Function | Canonical repo | Rule |
-|---|---|---|
-| Surplus Recovery engine | `cronek420/Atlas-Engine-Surplus-Recovery` | KEEP — internal/in-use Atlas system |
-| Resume Agent | `cronek420/ATLAS-RESUME-AGENT` | KEEP — internal/in-use Atlas system |
-| Growth Department | `cronek420/agent-atlas-growth-department-reviewed` | CANONICAL CANDIDATE — compare with unreviewed repo before retiring either |
-| Treasure Hunter | `cronek420/treasure-hunter-v1` | KEEP — active system |
-| Atlas core | `cronek420/atlas_engine` | KEEP pending dependency audit |
+These are not duplicate 9Design storefront repos and must remain separate.
 
-## Sellable / universal systems
+- `cronek420/Atlas-Engine-Surplus-Recovery`
+- `cronek420/ATLAS-RESUME-AGENT`
+- `cronek420/agent-atlas-growth-department-reviewed`
+- `cronek420/treasure-hunter-v1`
+- `cronek420/atlas_engine`
 
-| Function | Canonical repo | Rule |
-|---|---|---|
-| Universal Resume Agent | `cronek420/universal-resume-agent` | KEEP — sellable/onboarding version |
-| Agentic workflow framework | `cronek420/agentic-workflows` | KEEP — reusable framework/skills |
-| Agentic workforce website | `cronek420/agentic-workforce-site` | REVIEW — may merge into `9design-agents` after content comparison |
+## Sellable / universal systems — protected
 
-## Duplicate / legacy clusters requiring comparison before cleanup
+- `cronek420/universal-resume-agent`
+- `cronek420/agentic-workflows`
+- `cronek420/agentic-workforce-site` — review for eventual merge into 9Design Agents
+
+## VERIFIED SAFE-DELETE REPOSITORIES
+
+The repositories below were inspected and contain only placeholder/stub content, while a selected canonical repository exists for the same product family.
+
+### Dream
+
+- `cronek420/Dream_v1` — only `.gitattributes` and a 25-byte README; canonical Dream workspace is `DreamWeaver`.
+
+### Selfie / Photo
+
+- `cronek420/SELFIE_SCORE` — only `.gitattributes` and a 31-byte README; canonical target is `Photo-Score`.
+- `cronek420/SELFIE_SCORE-AI` — only `.gitattributes`, a 21-byte README, and a one-byte `web` placeholder; canonical target is `Photo-Score`.
+
+### Surplus Recovery
+
+- `cronek420/surplus-recovery-ai` — only `.gitattributes`; canonical internal system is `Atlas-Engine-Surplus-Recovery`.
+
+These are approved for repository-level deletion. The connected GitHub tool available in this session does not expose a repository-delete action, so deletion must be executed through GitHub repository settings or a GitHub token/CLI with repository-delete permission.
+
+## HIGH-CONFIDENCE DELETE CANDIDATES — inspect once before repository deletion
+
+Metadata shows these as empty or nearly empty, but their root contents have not yet been fully verified in this cleanup pass:
+
+### Dream
+- `manusDW`
+- `dreamcatcher-config`
+- `Vercel-Dreanweaver`
+- `GPT-DREAMWEAVER`
+
+### Selfie / Photo
+- `SELFIE-SCORE-2026`
+- `Sswebsite`
+
+### Surplus Recovery
+- `fund_recovery_console`
+- `Atlas-Agentic-fund-recovery-system`
+
+### Growth / lead generation
+- `Lead-Gen`
+
+### Asheville Vibe
+- `AVG_WEB`
+
+## DO NOT DELETE YET — unique/large code or unclear deployment relationship
 
 ### Dream cluster
 
-Canonical candidate: `DreamWeaver`.
+Canonical target: `DreamWeaver`.
 
-Compare before archive/delete:
+Preserve pending code/deployment comparison:
 - `dream-catcher-v1`
-- `Dream_v1` (0-size candidate)
 - `DreamWeaverv3`
 - `dreamz`
 - `AntiDream`
-- `manusDW` (0-size candidate)
 - `dreamcatcher-website`
 - `dreamcatcher-mobile`
-- `dreamcatcher-config` (0-size candidate)
-- `Vercel-Dreanweaver` (0-size candidate)
-- `GPT-DREAMWEAVER`
 - `CGPT-DREAMWEAVER`
 - `DC-luminous-subconscious`
 
 ### Asheville Vibe cluster
 
-Canonical candidate: `AVG_APP` plus a verified production web repository if separate.
-
-Compare:
-- `AVG_WEB` (0-size candidate)
+Preserve pending production-source verification:
 - `AVG_APP`
 - `avg-tmp`
 - `avg_mobile_app`
 - `Asheville-Vibe`
 
-### Selfie / Photo cluster
-
-Compare:
-- `Photo-Score`
-- `SELFIE_SCORE` (0-size candidate)
-- `SELFIE_SCORE-AI`
-- `SELFIE-SCORE-2026` (0-size candidate)
-- `Sswebsite` (0-size candidate)
-
 ### Surplus Recovery cluster
 
 Canonical internal system: `Atlas-Engine-Surplus-Recovery`.
 
-Compare before archive/delete:
+Preserve pending unique-code comparison:
 - `Surplus-Agent-007-`
 - `surplusrecoveryai`
-- `fund_recovery_console` (0-size candidate)
-- `surplus-recovery-ai` (0-size candidate)
-- `Atlas-Agentic-fund-recovery-system`
 - `atlas-ui`
 
 ### Growth / lead-generation cluster
 
-Canonical candidate: `agent-atlas-growth-department-reviewed`.
+Canonical target: `agent-atlas-growth-department-reviewed`.
 
-Compare:
+Preserve pending comparison:
 - `agent-atlas-growth-department`
-- `Lead-Gen` (0-size candidate)
 - `My_ai_marketer`
 - `ASHEVILLE_AI_AGENTIC_SELF_AUTOMATED_BUSINESS`
 
 ### World Monitor cluster
 
-Compare:
+Preserve both until compared:
 - `World-Moniter`
 - `worldmonitor`
 
-## Generic/ambiguous repositories requiring identification
+## Generic/ambiguous repositories — preserve until identified
 
-Do not rename or remove until their purpose and dependencies are confirmed:
 - `backend`
 - `studio`
 - `ais`
 - `agent-nick`
 - `splash`
-
-## Cleanup order
-
-1. Freeze new duplicate repo creation while cleanup is underway.
-2. Verify production/deployment source for each product.
-3. Compare each duplicate cluster for unique files and newer commits.
-4. Confirm no secrets or deployment dependencies point to old repo names.
-5. Select one canonical repository per product.
-6. Rename canonical 9Design product repos to the `9design-*` convention.
-7. Update deployment integrations, Git remotes, README links, badges, workflows, and DNS/domain documentation.
-8. Archive verified legacy repos instead of deleting them initially.
-9. Leave archived repos for a safety period; delete only when clearly useless and explicitly approved.
-10. Maintain this file as the master repo/subdomain registry.
 
 ## Desired 9Design structure
 
@@ -149,6 +153,8 @@ build.9design.online           Rough Draft Builders Club (optional)
 lab.9design.online             experiments / prototypes
 ```
 
-## Safety rule
+## Cleanup rule
 
-**Inspect before modify. Compare before archive. Archive before delete.** Active Atlas systems and Universal sellable systems remain separate even when both are marketed through 9Design.
+**One product = one canonical repository unless web/mobile/backend genuinely require separate deployable repositories.**
+
+Atlas internal systems and Universal sellable systems stay separate from customer-facing 9Design products.
