@@ -3,27 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | 9Design Agents</title>
-  <meta name="description" content="Contact and project status for 9Design Agents.">
+  <title>Start a Project | 9Design Agents</title>
+  <meta name="description" content="Tell 9Design what is wasting time or money and start an AI automation project.">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="styles-patch.css">
   <style>
-    .contact-section{padding:120px 0}.status-wrap{max-width:900px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem}.info-card{background:var(--bg-slate);padding:2rem;border-radius:20px;border:1px solid var(--border)}.info-card h3{margin-bottom:1rem;color:var(--primary)}.info-card p{color:var(--text-muted)}
+    .contact-section{padding:90px 0 120px}.contact-wrap{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:.85fr 1.3fr;gap:2.5rem}.info-card,.form-card{background:var(--bg-slate);padding:2rem;border-radius:20px;border:1px solid var(--border)}.info-card h3,.form-card h2{margin-bottom:1rem}.info-card p{color:var(--text-muted);margin-bottom:1rem}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.form-group{margin-bottom:1rem}.form-group label{display:block;margin-bottom:.45rem;font-weight:600}.form-group input,.form-group select,.form-group textarea{width:100%;padding:13px 14px;border-radius:10px;border:1px solid var(--border);background:#060a17;color:var(--text-white);font:inherit}.form-group textarea{resize:vertical;min-height:130px}.small-note{font-size:.86rem;color:var(--text-muted);margin-top:1rem}.hp{position:absolute;left:-9999px}@media(max-width:760px){.contact-wrap,.form-grid{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
   <div class="bg-glow"><div class="glow-1"></div><div class="glow-2"></div></div>
-  <nav class="navbar"><div class="container"><a class="logo" href="index.html">9Design Agents</a><ul class="nav-links"><li><a href="index.html#products">Systems</a></li><li><a href="advantages.html">Why 9Design</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html" style="color:var(--text-white)">Contact</a></li></ul></div></nav>
+  <nav class="navbar"><div class="container"><a class="logo" href="index.html">9Design Agents</a><ul class="nav-links"><li><a href="index.html#products">Systems</a></li><li><a href="index.html#universal">Universal Agents</a></li><li><a href="advantages.html">Why 9Design</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html" style="color:var(--text-white)">Contact</a></li></ul></div></nav>
 
-  <header class="hero" style="padding:151px 0 80px"><div class="container"><div class="hero-badge">CONTACT SETUP IN PROGRESS</div><h1>We removed the fake contact details.</h1><p>The old site displayed placeholder email and phone information. 9Design is being connected to a real business contact channel now, so this page will not pretend a message was submitted when it was not.</p></div></header>
+  <header class="hero" style="padding:151px 0 60px"><div class="container"><div class="hero-badge">START WITH THE BOTTLENECK</div><h1>What is wasting <span class="accent">time or money?</span></h1><p>Tell us what keeps repeating, what is getting missed, and what you want the system to handle. We will start there.</p></div></header>
 
-  <section class="contact-section"><div class="container"><div class="status-wrap">
-    <div class="info-card"><h3>Buying a listed system</h3><p>Use the Stripe purchase button on the system page. Stripe handles the payment flow independently of this contact page.</p><p style="margin-top:1.5rem"><a href="index.html#products" class="cta-btn-secondary btn-link">View systems</a></p></div>
-    <div class="info-card"><h3>Custom project</h3><p>The project-intake form is temporarily disabled until it is connected to a real inbox or CRM. This prevents inquiries from disappearing into a browser-only form.</p></div>
-    <div class="info-card"><h3>What gets connected next</h3><p>A 9Design business email plus a working intake route that sends every inquiry somewhere you can actually see and respond to it.</p></div>
+  <section class="contact-section"><div class="container"><div class="contact-wrap">
+    <div class="info-card">
+      <h3>What happens next</h3>
+      <p><strong>1.</strong> You describe the problem.</p>
+      <p><strong>2.</strong> We identify what can be researched, verified, automated or escalated.</p>
+      <p><strong>3.</strong> We match it to an existing 9Design system or scope a custom workflow.</p>
+      <p><strong>4.</strong> Important decisions stay with a human.</p>
+      <hr style="border:0;border-top:1px solid var(--border);margin:1.5rem 0">
+      <p><strong>Lead log:</strong> a 9Design Agent Leads sheet has been created for the customer pipeline.</p>
+      <p><strong>Current intake:</strong> submissions are delivered to the owner inbox. The Google Sheet sync is the next backend integration step.</p>
+    </div>
+
+    <div class="form-card">
+      <h2>Tell us about the job</h2>
+      <form action="https://formsubmit.co/gronekthomas@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New 9Design Agent Inquiry">
+        <input type="hidden" name="_next" value="https://agent.9design.online/thank-you.html">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="source" value="agent.9design.online">
+        <div class="hp"><label>Leave blank<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></div>
+        <div class="form-grid">
+          <div class="form-group"><label for="name">Name</label><input id="name" type="text" name="name" required></div>
+          <div class="form-group"><label for="email">Email</label><input id="email" type="email" name="email" required></div>
+          <div class="form-group"><label for="company">Company</label><input id="company" type="text" name="company"></div>
+          <div class="form-group"><label for="website">Website</label><input id="website" type="url" name="website" placeholder="https://"></div>
+          <div class="form-group"><label for="size">Company size</label><select id="size" name="company_size"><option>Just me</option><option>2–10</option><option>11–50</option><option>51–200</option><option>200+</option></select></div>
+          <div class="form-group"><label for="interest">Interested in</label><select id="interest" name="interest"><option>Not sure — help me find the bottleneck</option><option>Universal Agentic Workforce</option><option>Universal Resume & Opportunity Agent</option><option>Lead / Growth Workforce</option><option>Content Intelligence</option><option>Newsletter System</option><option>Hiring Workflow</option><option>Custom automation</option></select></div>
+        </div>
+        <div class="form-group"><label for="challenge">What is wasting time, money, or getting missed?</label><textarea id="challenge" name="challenge" required placeholder="Example: We get leads, but nobody follows up consistently. Or: I spend 10 hours a week researching companies manually."></textarea></div>
+        <button class="cta-btn" type="submit" style="width:100%">Send project request</button>
+        <p class="small-note">The first live submission may trigger a one-time FormSubmit activation email to the owner inbox. After activation, future inquiries are delivered automatically.</p>
+      </form>
+    </div>
   </div></div></section>
 
   <footer class="footer"><div class="container"><p>&copy; 2026 9Design Agents.</p><p><a href="index.html">Home</a> | <a href="advantages.html">Why 9Design</a> | <a href="faq.html">FAQ</a></p></div></footer>
-  <script src="script.js" defer></script>
 </body>
 </html>
